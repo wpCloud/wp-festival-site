@@ -93,5 +93,65 @@
             "zend",
             "zikula"
         ]
+    },
+    {
+        "name": "usabilitydynamics/wp-options-definitely",
+        "version": "master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "git@github.com:UsabilityDynamics/wp-options-definitely",
+            "reference": "master"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/UsabilityDynamics/wp-options-definitely/archive/master.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "ivaynberg/select2": "3.4.*"
+        },
+        "type": "wordpress-plugin",
+        "extra": {
+            "installer-name": "wp-options-definitely"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "WPOD//": "inc/"
+            }
+        },
+        "license": [
+            "GPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Felix Arntz",
+                "email": "felix-arntz@leaves-and-love.net",
+                "homepage": "http://leaves-and-love.net",
+                "role": "Developer"
+            }
+        ],
+        "description": "This plugin makes adding options to the WordPress admin area and customizer very simple, yet flexible. It all works using a filter and an array.",
+        "homepage": "http://wordpress.org/plugins/options-definitely/",
+        "keywords": [
+            "admin",
+            "backend",
+            "customizer",
+            "framework",
+            "options",
+            "plugin",
+            "ui",
+            "wordpress"
+        ],
+        "support": {
+            "email": "felix-arntz@leaves-and-love.net",
+            "issues": "https://github.com/felixarntz/options-definitely/issues"
+        }
     }
 ]

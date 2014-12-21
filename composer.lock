@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b6a66408fa0a41e2d214374c9e0c2b67",
+    "hash": "6296efab5506ee54429dc5b49fc8c5aa",
     "packages": [
         {
             "name": "composer/installers",
@@ -98,6 +98,65 @@
                 "zikula"
             ],
             "time": "2014-11-29 01:29:17"
+        },
+        {
+            "name": "usabilitydynamics/wp-options-definitely",
+            "version": "master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:UsabilityDynamics/wp-options-definitely",
+                "reference": "master"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/UsabilityDynamics/wp-options-definitely/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "ivaynberg/select2": "3.4.*"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "wp-options-definitely"
+            },
+            "autoload": {
+                "psr-0": {
+                    "WPOD//": "inc/"
+                }
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Felix Arntz",
+                    "email": "felix-arntz@leaves-and-love.net",
+                    "homepage": "http://leaves-and-love.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This plugin makes adding options to the WordPress admin area and customizer very simple, yet flexible. It all works using a filter and an array.",
+            "homepage": "http://wordpress.org/plugins/options-definitely/",
+            "keywords": [
+                "admin",
+                "backend",
+                "customizer",
+                "framework",
+                "options",
+                "plugin",
+                "ui",
+                "wordpress"
+            ],
+            "support": {
+                "email": "felix-arntz@leaves-and-love.net",
+                "issues": "https://github.com/felixarntz/options-definitely/issues"
+            },
+            "time": "2014-12-21 03:49:06"
         }
     ],
     "packages-dev": [],
