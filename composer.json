@@ -1,35 +1,56 @@
 {
-    "name": "wpcloud/wp-festival-site",
-    "type": "wordpress-plugin",
-    "description": "Handler for festival sites.",
-    "require": {
-        "composer/installers": "~1.0"
+  "name": "wpcloud/wp-festival-site",
+  "type": "wordpress-plugin",
+  "description": "Handler for festival sites.",
+  "require": {
+    "composer/installers": "~1.0",
+    "usabilitydynamics/wp-options-definitely": "master"
+  },
+  "keywords": [
+    "wordpress",
+    "wpcloud",
+    "network",
+    "festival"
+  ],
+  "license": "GPL-3.0+",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repository.usabilitydynamics.com"
     },
-    "keywords": [ "wordpress", "wpcloud", "network", "festival" ],
-    "license": "GPL-3.0+",
-    "repositories": [
-      {
-        "type": "composer",
-        "url": "https://repository.usabilitydynamics.com"
-      },
-      {
-        "type": "composer",
-        "url": "http://wpackagist.org"
-      }
-    ],
-    "minimum-stability": "dev",
-    "authors": [
-        {
-            "name": "andypotanin",
-            "email": "andy.potanin@usabilitydynamics.com"
-        }
-    ],
-    "config": {
-      "component-dir": "static/assets/vendor",
-      "github-protocols": [ "ssh" ],
-      "vendor-dir": "vendor",
-      "bin-dir": "vendor/.bin",
-      "discard-changes": true,
-      "optimize-autoloader": true
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
     }
+  ],
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "andypotanin",
+      "email": "andy.potanin@usabilitydynamics.com"
+    }
+  ],
+  "config": {
+    "component-dir": "static/assets/vendor",
+    "github-protocols": ["ssh"],
+    "vendor-dir": "vendor/libraries",
+    "bin-dir": "vendor/.bin",
+    "discard-changes": true,
+    "optimize-autoloader": true
+  },
+  "extra": {
+    "installer-paths": {
+      "vendor/plugins/{$name}": [
+        "type:wordpress-muplugin",
+        "type:wordpress-plugin",
+        "type:wpackagist-plugin"
+      ],
+      "vendor/themes/{$name}": [
+        "type:wordpress-theme"
+      ],
+      "vendor/{$vendor}/{$name}": [
+        "type:wordpress-library"
+      ]
+    }
+  }
 }

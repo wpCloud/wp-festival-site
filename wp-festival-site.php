@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Festival Site
+ * Plugin Name: Festival Sites
  * Plugin URI: http://wpCloud.io
- * Description: Handler for festival sites.
+ * Description: Adds network support for festival sites.
  * Author: Usability Dynamics, Inc
  * Version: 0.1.0
  * Network: true
