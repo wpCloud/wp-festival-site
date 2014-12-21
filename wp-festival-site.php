@@ -1,3 +1,4 @@
+<?php
 /**
  * Plugin Name: Festival Site
  * Plugin URI: http://wpCloud.io
