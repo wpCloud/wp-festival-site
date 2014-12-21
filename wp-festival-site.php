@@ -34,6 +34,12 @@
  * @author Andy Potanin <andy.potanin@usabilitydynamics.com>
  */
 
+add_action( 'network_admin_menu', function() {
+
+  // add_submenu_page( 'settings.php', 'My Custom Submenu Page', 'My Custom Submenu Page', 'manage_options', 'my-custom-submenu-page', 'my_custom_submenu_page_callback' );
+
+});
+
 add_action( 'admin_init', function() {
 
 });
